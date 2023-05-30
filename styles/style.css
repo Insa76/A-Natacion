@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  background-image: url(/img/Blue\ Man.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.boton {
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 30px;
+}
+
+.wap {
+  background-color: rgba(37, 180, 209, 0.808);
+  display: flex;
+  gap: 870px;
+  width: 70px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.conteiner-encabezado {
+  display: flex;
+  color: white;
+  gap: 100px;
+  margin: 20px;
+}
+
+.conteiner-encabezado img {
+  width: 200px;
+  margin-left: -40px;
+  margin-top: 10px;
+}
+
+.conteiner-encabezado div {
+  /*background-image: url(/img/fondo\ logo.jpg);
+  background-position: bottom;
+  background-size: cover;*/
+  background-color: rgba(252, 250, 250, 0.747);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+  width: 125px;
+  outline: 3px solid white;
+}
+
+.conteiner-encabezado h1 {
+  font-size: 30px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.conteiner-menu {
+  background-color: rgb(30, 26, 94);
+  background: rgb(54, 46, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 46, 193, 1) 0%,
+    rgba(29, 52, 163, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 50px;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-slider {
+  background-image: url(http://www.metro951.com/wp-content/uploads/2017/03/piscinaolimpica1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: rotate 40s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.slider span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 32.5deg)) translateZ(350px);
+}
+
+.slider span img {
+  /*position: absolute;*/
+  /*top: 0;
+  left: 0;*/
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.466);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+  object-fit: cover;
+  transition: 2s;
+}
+
+.slider span:hover img {
+  transform: scale(1.2);
+}
+
+.conocenos {
+  background-image: url(/img/Paralax-BG-Testimonials-SWIM@bordes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(68, 68, 68, 0.897);
+  border: 3px solid rgba(0, 0, 0, 0.466);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+  display: flex;
+  border-radius: 3px;
+}
+.conocenos img {
+  width: 20%;
+  margin: 20px;
+}
+
+.conocenos p {
+  color: white;
+  margin: 20px;
+}
+
+.actividades-1 {
+  display: flex;
+  margin-top: 150px;
+  gap: 30px;
+}
+.actividades-2 {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.actividades-1 img {
+  width: 70%;
+}
+.actividades-2 img {
+  width: 70%;
+  border: 3px solid rgba(0, 0, 0, 0.466);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+}
+
+.actividades-1 h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.actividades-2 h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.niños {
+  background-image: url(/img/fondo1.jpg);
+
+  background-color: rgba(54, 197, 233, 0.582);
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px 0px rgb(5, 5, 5);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.inter {
+  background-image: url(http://www.metro951.com/wp-content/uploads/2017/03/piscinaolimpica1.jpg);
+  background-color: rgba(54, 197, 233, 0.582);
+  border: 3px solid rgba(0, 0, 0, 0.466);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+.teens {
+  background-image: url(http://www.metro951.com/wp-content/uploads/2017/03/piscinaolimpica1.jpg);
+  background-color: rgba(54, 197, 233, 0.582);
+  border: 3px solid rgba(0, 0, 0, 0.466);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+.bebe {
+  background-image: url(/img/Paralax-BG-Testimonials-SWIM@bordes.png);
+  background-color: rgba(54, 197, 233, 0.582);
+  border: 3px solid white;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.bebe h3 {
+  background-color: rgb(23, 112, 134);
+  border-radius: 3px;
+  /*box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);*/
+}
+
+.bebe p {
+  background-color: rgb(23, 112, 134);
+  border-radius: 3px;
+  box-shadow: 0px 10px 10px 0px rgba(5, 5, 5, 0.952);
+}
+
+.line {
+  /*background: linear-gradient(
+    to top,
+    rgba(54, 46, 193, 1) 0%,
+    rgba(29, 52, 163, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );*/
+  outline: 2px solid white;
+  padding: 10px;
+}
+
+.adultos {
+  background-color: rgba(54, 197, 233, 0.582);
+  border: 3px solid white;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+.agym {
+  background-color: rgba(54, 197, 233, 0.582);
+  border: 3px solid white;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin: 15%;
+  margin-top: 150px;
+  width: 70%;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: rgb(30, 26, 94);
+  width: 100%;
+  height: 150px;
+}
