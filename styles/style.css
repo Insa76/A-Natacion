@@ -6,11 +6,11 @@
 
 body {
   height: auto;
-  background-image: url(/img/Blue\ Man.png);
+  background-image: url(/img/Paralax.png);
   background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: contain;
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
 }
 
 .boton {
@@ -39,6 +39,7 @@ body {
 
 .conteiner-encabezado img {
   width: 200px;
+  height: auto;
   margin-left: -40px;
   margin-top: 10px;
 }
@@ -146,10 +147,11 @@ nav ul li a {
 }
 
 .conocenos {
-  background-image: url(/img/Paralax.png);
-  background-position: center;
+  background-image: url(/img/Blue\ Man.png);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  /*background-attachment: fixed;*/
   background-color: rgba(68, 68, 68, 0.897);
   border: 3px solid rgba(0, 0, 0, 0.466);
   box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
@@ -197,8 +199,9 @@ nav ul li a {
 
 .niños {
   background-image: url(/img/fondo1.jpg);
+  background-position: center;
+  background-attachment: fixed;
 
-  background-color: rgba(54, 197, 233, 0.582);
   border: 3px solid rgb(0, 0, 0);
   box-shadow: 0px 0px 10px 0px rgb(5, 5, 5);
   background-position: center;
@@ -208,8 +211,10 @@ nav ul li a {
   color: white;
 }
 .inter {
-  background-image: url(http://www.metro951.com/wp-content/uploads/2017/03/piscinaolimpica1.jpg);
-  background-color: rgba(54, 197, 233, 0.582);
+  background-image: url(/img/Blue\ Man.png);
+  background-position: bottom;
+  background-size: cover;
+  color: white;
   border: 3px solid rgba(0, 0, 0, 0.466);
   box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
   background-position: center;
@@ -218,7 +223,6 @@ nav ul li a {
   text-align: center;
 }
 .teens {
-  background-image: url(http://www.metro951.com/wp-content/uploads/2017/03/piscinaolimpica1.jpg);
   background-color: rgba(54, 197, 233, 0.582);
   border: 3px solid rgba(0, 0, 0, 0.466);
   box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
@@ -230,7 +234,10 @@ nav ul li a {
 
 .bebe {
   background-image: url(/img/Paralax.png);
-  background-color: rgba(54, 197, 233, 0.582);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   border: 3px solid white;
   background-position: center;
   background-size: cover;
