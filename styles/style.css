@@ -21,13 +21,11 @@ body {
 }
 
 .wap {
-  background-color: rgba(37, 180, 209, 0.808);
   display: flex;
   gap: 870px;
-  width: 70px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);
+  width: 75px;
+  /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.808);*/
   border-radius: 50%;
-  padding: 10px;
 }
 
 .conteiner-encabezado {
@@ -38,7 +36,6 @@ body {
 
 .logo {
   display: flex;
-
   position: absolute;
 }
 .logo h2 {
@@ -57,40 +54,50 @@ body {
   outline: 3px solid white;
 }
 
-.conteiner-encabezado div {
-  /*background-color: rgba(252, 250, 250, 0.747);
-  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
-  width: 125px;
-  outline: 3px solid white;*/
+.nata {
+  position: absolute;
+  width: 100%;
 }
-
-/*.conteiner-encabezado h1 {
-  font-size: 30px;
-  margin-top: 5%;
-  margin-left: 5%;
-}*/
+.nata img {
+  width: 70px;
+  float: right;
+  outline: none;
+  margin-right: 50px;
+}
 
 .conteiner-menu {
   padding-top: 20px;
   width: 100%;
   height: 90px;
-  background-color: rgb(30, 26, 94);
+  background: #362ec1;
+  /*background-color: rgb(30, 26, 94);
   background: rgb(54, 46, 193);
   background: linear-gradient(
     90deg,
     rgba(54, 46, 193, 1) 0%,
     rgba(29, 52, 163, 1) 35%,
     rgba(0, 212, 255, 1) 100%
-  );
+  );*/
+}
+
+.nav i {
+  float: right;
+  margin-right: 5px;
+  width: 40px;
+  cursor: pointer;
+  /*display: none;*/
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: right;*/
+  float: right;
+  margin-right: 100px;
   padding: 10px;
   gap: 50px;
 }
 nav ul li {
+  display: inline-block;
   list-style: none;
   position: relative;
   margin-left: 20px;
@@ -98,6 +105,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
 }
 
 .container-slider {
@@ -160,23 +168,23 @@ nav ul li a {
 }
 
 .conocenos {
-  background-image: url(/img/BlueMan.png);
+  background-image: url(/img/panoramica.jpeg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-attachment: fixed;*/
   /*background-color: rgba(68, 68, 68, 0.897);*/
-  border: none;
   box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
   display: flex;
   align-items: center;
   border-radius: 3px;
   margin-top: 50px;
-  width: 90%;
-  margin-left: 5%;
+  width: 95%;
+  margin-left: 2%;
+  height: 300px;
 }
 .conocenos img {
-  width: 20%;
+  width: 40%;
   margin: 20px;
 }
 
@@ -187,7 +195,7 @@ nav ul li a {
 
 .actividades-1 {
   display: flex;
-  margin-top: 150px;
+  margin-top: 100px;
   gap: 30px;
   width: 90%;
   margin-left: 5%;
@@ -244,8 +252,8 @@ nav ul li a {
 }
 
 .niños {
-  background-color: rgba(47, 124, 129, 0.747);
-  box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.589);
+  box-shadow: 0px 0px 30px 0px rgba(255, 251, 251, 0.925);
   border-radius: 10px;
   border: 5px solid rgba(48, 39, 170, 0.5);
   padding: 20px;
@@ -260,7 +268,7 @@ nav ul li a {
 }
 
 .inter {
-  background-color: rgba(47, 124, 129, 0.747);
+  background-color: rgba(0, 0, 0, 0.445);
   box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
   border-radius: 10px;
   border: 5px solid rgba(48, 39, 170, 0.5);
@@ -269,7 +277,7 @@ nav ul li a {
   color: white;
 }
 .teens {
-  background-color: rgba(47, 124, 129, 0.747);
+  background-color: rgba(0, 0, 0, 0.589);
   box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
   border-radius: 10px;
   border: 5px solid rgba(48, 39, 170, 0.5);
@@ -279,7 +287,7 @@ nav ul li a {
 }
 
 .bebe {
-  background-color: rgba(47, 124, 129, 0.747);
+  background-color: rgba(0, 0, 0, 0.589);
   box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
   border-radius: 10px;
   border: 5px solid rgba(48, 39, 170, 0.5);
@@ -287,17 +295,17 @@ nav ul li a {
   text-align: center;
   color: white;
 }
-.bebe h3 {
+/*.bebe h3 {
   background-color: rgb(23, 112, 134);
   border-radius: 3px;
-  /*box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);*/
+ box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
 }
 
 .bebe p {
   background-color: rgb(23, 112, 134);
   border-radius: 3px;
   box-shadow: 0px 10px 10px 0px rgba(5, 5, 5, 0.952);
-}
+}*/
 
 .line {
   /*background: linear-gradient(
@@ -331,13 +339,7 @@ nav ul li a {
 }
 
 .map {
-  background-color: rgb(30, 26, 94);
-  background: rgb(54, 46, 193);
-  background: linear-gradient(
-    to left,
-    rgba(54, 46, 193, 1) 0%,
-    rgba(29, 52, 163, 1) 100%
-  );
+  background-color: rgba(53, 46, 193, 0.589);
   margin-top: 2%;
   width: 100%;
   height: 350px;
@@ -357,7 +359,7 @@ iframe {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
   margin: 15%;
   margin-top: 150px;
   width: 70%;
@@ -374,33 +376,38 @@ iframe {
 
 footer {
   display: flex;
+  justify-content: space-around;
   background-color: rgb(30, 26, 94);
   width: 100%;
   height: auto;
-  margin-bottom: -5px;
 }
 
-.encontranos {
-  display: flex;
-  gap: 30px;
+footer h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: white;
 }
 
-.encontranos h3 {
+footer h4 {
+  line-height: 1px;
+  font-size: 13px;
+  color: rgb(35, 153, 182);
+}
+
+/*.encontranos {
+  display: flex;*/
+/*gap: 30px;
+}*/
+
+/*.encontranos h3 {
   text-align: center;
   margin-left: 100px;
   color: white;
   margin-top: 10px;
-}
+}*/
 
 .insta {
   display: flex;
-}
-
-.insta h4 {
-  margin-top: 20px;
-  margin-left: -50px;
-  color: white;
-  margin-bottom: 40px;
 }
 
 .instagram {
@@ -408,36 +415,11 @@ footer {
   margin: 20px;
 }
 
-.ubi {
-  display: flex;
-  margin-top: 10px;
-}
-
-.ubi img {
-  width: 40px;
-  height: 40px;
-  margin: 20px;
-}
-
-.ubi h4 {
-  color: white;
-  font-size: 15px;
-}
-
-.correo {
-  display: flex;
-  margin-top: 15px;
-  color: white;
-  gap: 10px;
-}
-
-.correo img {
-  width: 40px;
-  height: 40px;
-}
-
 .fondo-footer {
-  background-color: rgb(54, 46, 193);
+  padding-top: 3px;
+  text-align: center;
+  background-color: rgba(53, 46, 193, 0.589);
   width: 100%;
   height: 30px;
+  color: white;
 }
