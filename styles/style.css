@@ -6,11 +6,12 @@
 
 body {
   height: auto;
-  background-image: url(/img/fondos\ web.jpg);
+  background-image: url(/img/fondosweb.jpg);
   background-position: center;
   /*background-size: cover;*/
   /*background-repeat: no-repeat;*/
   background-attachment: fixed;
+  font-family: "Saira Condensed", sans-serif;
 }
 
 .boton {
@@ -29,47 +30,39 @@ body {
 }
 
 .conteiner-encabezado {
-  display: flex;
   color: white;
   gap: 100px;
+  margin-top: -10px;
 }
 
-.logo {
+.logo img {
   display: flex;
   position: absolute;
+  width: 70px;
+  margin-left: 25px;
+  margin-top: -10px;
 }
 .logo h2 {
-  padding: 20px;
-  margin-top: 10px;
-  margin-left: -5px;
-  margin-bottom: 10px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 25px;
+  margin-left: 100px;
+  margin-bottom: -70px;
   font-size: 20px;
   outline: 3px solid white;
+  text-align: center;
 }
 
-.conteiner-encabezado img {
-  background-color: rgba(252, 250, 250, 0.747);
-  width: 100px;
+/*.conteiner-encabezado img {
+  width: 50px;
   margin: 10px;
-  outline: 3px solid white;
-}
-
-.nata {
-  position: absolute;
-  width: 100%;
-}
-.nata img {
-  width: 70px;
-  float: right;
-  outline: none;
-  margin-right: 50px;
-}
+}*/
 
 .conteiner-menu {
   padding-top: 20px;
   width: 100%;
-  height: 90px;
-  background: #362ec1;
+  height: 100px;
+  background: rgb(69, 158, 241);
   /*background-color: rgb(30, 26, 94);
   background: rgb(54, 46, 193);
   background: linear-gradient(
@@ -91,6 +84,7 @@ body {
 nav ul {
   /*display: flex;
   justify-content: right;*/
+
   float: right;
   margin-right: 100px;
   padding: 10px;
@@ -119,7 +113,7 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: 5px solid rgb(48, 39, 170);
+  border-bottom: 5px solid rgb(69, 158, 241);
 }
 
 .slider {
@@ -202,7 +196,7 @@ nav ul li a {
 }
 
 .btn {
-  background-color: rgb(19, 140, 156);
+  background-color: rgb(69, 158, 241);
   padding: 5px;
   border-radius: 3px;
   width: 40%;
@@ -217,7 +211,7 @@ nav ul li a {
 }
 
 .btn a:visited {
-  background-color: rgb(19, 140, 156);
+  background-color: rgb(69, 158, 241);
   color: white;
   width: 40%;
 }
@@ -253,9 +247,9 @@ nav ul li a {
 
 .niños {
   background-color: rgba(0, 0, 0, 0.589);
-  box-shadow: 0px 0px 30px 0px rgba(255, 251, 251, 0.925);
+  box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 0.925);
   border-radius: 10px;
-  border: 5px solid rgba(48, 39, 170, 0.5);
+  border: 5px solid #459ef1;
   padding: 20px;
   text-align: center;
   color: white;
@@ -268,19 +262,19 @@ nav ul li a {
 }
 
 .inter {
-  background-color: rgba(0, 0, 0, 0.445);
-  box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.589);
+  border: 5px solid #459ef1;
+  box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 0.925);
   border-radius: 10px;
-  border: 5px solid rgba(48, 39, 170, 0.5);
   padding: 20px;
   text-align: center;
   color: white;
 }
 .teens {
   background-color: rgba(0, 0, 0, 0.589);
-  box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
+  border: 5px solid #459ef1;
+  box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 0.925);
   border-radius: 10px;
-  border: 5px solid rgba(48, 39, 170, 0.5);
   padding: 20px;
   text-align: center;
   color: white;
@@ -288,9 +282,9 @@ nav ul li a {
 
 .bebe {
   background-color: rgba(0, 0, 0, 0.589);
-  box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
+  border: 5px solid #459ef1;
+  box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 0.925);
   border-radius: 10px;
-  border: 5px solid rgba(48, 39, 170, 0.5);
   padding: 20px;
   text-align: center;
   color: white;
@@ -319,20 +313,20 @@ nav ul li a {
 }
 
 .adultos {
-  background-color: rgba(47, 124, 129, 0.747);
-  box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.589);
+  border: 5px solid #459ef1;
+  box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 0.925);
   border-radius: 10px;
-  border: 5px solid rgba(48, 39, 170, 0.5);
   padding: 20px;
   text-align: center;
   color: white;
 }
 
 .agym {
-  background-color: rgba(47, 124, 129, 0.747);
-  box-shadow: 0px 0px 10px 0px rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.589);
+  border: 5px solid #459ef1;
+  box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 0.925);
   border-radius: 10px;
-  border: 5px solid rgba(48, 39, 170, 0.5);
   padding: 20px;
   text-align: center;
   color: white;
@@ -391,7 +385,7 @@ footer h3 {
 footer h4 {
   line-height: 1px;
   font-size: 13px;
-  color: rgb(35, 153, 182);
+  color: #459ef1;
 }
 
 /*.encontranos {
