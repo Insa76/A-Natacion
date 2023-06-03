@@ -32,6 +32,7 @@ body {
 .conteiner-encabezado {
   color: white;
   gap: 100px;
+  width: 100%;
   margin-top: -10px;
 }
 
@@ -187,14 +188,6 @@ nav ul li a {
   margin: 20px;
 }
 
-.actividades-1 {
-  display: flex;
-  margin-top: 100px;
-  gap: 30px;
-  width: 90%;
-  margin-left: 5%;
-}
-
 .btn {
   background-color: rgb(69, 158, 241);
   padding: 5px;
@@ -216,9 +209,37 @@ nav ul li a {
   width: 40%;
 }
 
-.actividades-1 p {
+section {
+  margin-top: 50px;
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+}
+
+section img {
+  width: 200px;
+}
+
+.actividades-1 {
+  display: flex;
+  margin-top: 100px;
+  gap: 30px;
+  width: 90%;
+  margin-left: 5%;
+}
+/*.actividades-1 p {
+  margin-bottom: 10px;
+}*/
+
+.actividades-1 h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
+.actividades-1 img {
+  width: 70%;
+}
+
 .actividades-2 {
   display: flex;
   margin-top: 50px;
@@ -227,20 +248,32 @@ nav ul li a {
   margin-left: 5%;
 }
 
-.actividades-1 img {
-  width: 70%;
-}
 .actividades-2 img {
   width: 70%;
   border: 3px solid rgba(0, 0, 0, 0.466);
   box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
 }
 
-.actividades-1 h3 {
+.actividades-2 h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.actividades-2 h3 {
+
+.actividades-3 {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.actividades-3 img {
+  width: 70%;
+  border: 3px solid rgba(0, 0, 0, 0.466);
+  box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.952);
+}
+
+.actividades-3 h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -416,4 +449,7 @@ footer h4 {
   width: 100%;
   height: 30px;
   color: white;
+}
+
+@media (max-width: 480px) {
 }
